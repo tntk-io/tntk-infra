@@ -1,0 +1,12 @@
+base_domain             = ""
+aws_region              = ""
+tag_env                 = ""
+id_rsa                  = ""
+
+datadog_region          = ""
+datadog_api_key         = ""
+datadog_application_key = ""
+
+registrationToken       = ""
+ci_project_repo         = ""
+cd_project_repo         = ""
