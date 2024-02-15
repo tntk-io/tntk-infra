@@ -1,5 +1,5 @@
 <!-- BEGIN_TF_DOCS -->
-## Project overview
+# Project overview
 
 This educational project is intended for the practical application of knowledge in the field of cloud technology and DevOps, as well as the deployment of web applications with the best practices. The stack is designed to cover the maximum number of technologies and simultaneously carry the functional and meaningful load on each. This project applies a declarative approach to infrastructure building and shows the deployment automation process for the entire stack. All components of the project and their relationships are considered in detail to see how the application and its operation services work in the actual cloud on a concrete example.
 
@@ -7,7 +7,7 @@ This educational project is intended for the practical application of knowledge 
 
 Gain practical Infrastructure as code (IaC) skills. Learn how to deploy such applications in the cloud cluster.
 
-## Requirements and tools
+# Requirements and tools
 
 1. Terraform cli (https://developer.hashicorp.com/terraform/install)
 2. AWS account (where everything will be deployed)
@@ -29,23 +29,13 @@ To deploy our terraform code first of all we need to create account on https://a
 5. Define folder with terraform code ("dev" or "prod").
 6. Define branch name.
 7. Create workspace.
-8. Define required variables. Don't forget to define Environment variables for AWS ("AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY")
+8. Define required variables. Don't forget to define Environment variables for AWS ("AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", if you are using SSO add the "AWS_SESSION_TOKEN").
 9. Start plan.
 10. Apply. After planning we can confirm & apply – it will executes the changes defined by our Terraform configuration to create, update, or destroy resources. It will take about 30 min to create all resources.
 
 # Application deployment
 
-After deploying infrastructure we moving to application section. In this section we will deploy our application to our infastructure.
-
-1. Add Github secret to Repository Settings → Secrets and variables → Actions ("API_TOKEN_GITHUB" with Github token as value).
-2. Trigger CI pipeline. Our integration process depends on commit SHA and the easiest way to start new build is make a empty commit to the CI branch.
-   Trigger CI pipeline by pushing new commit to project src repo:
-   git commit --allow-empty -m "test emplty commit"
-3. Wait for the CI process to finish.
-4. Get argocd default admin password. We can get it inside AWS "EKS" service → EKS-cluster → Resources → Config and secrets → Secrets → "argocd-initial-admin-secret" → password "decode".
-5. Login to argo CD and check sync of "demo" application. (e.g. "https://argo.prod.example.com/").
-6. Check the application (e.g. "https://demoapp.prod.example.com/").
-7. Create new user and login.
+After deploying infrastructure we moving to application section desribed in application repository - https://github.com/tntk-io/tntk-ci.
 
 # Removing Infrastructure
 

@@ -43,7 +43,7 @@ provider "aws" {
     tags = {
       Team        = "Tentek DevOps"
       Project     = "DemoApp"
-      Environment = "Prod"
+      Environment = "Dev"
       ManagedBy   = "Terraform"
     }
   }
