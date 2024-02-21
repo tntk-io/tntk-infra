@@ -106,11 +106,6 @@ resource "helm_release" "ingress-nginx" {
   create_namespace = "true"
   timeout    = 600
   set {
-    name  = "controller.service.annotations.service\\.beta\\.kubernetes\\.io/aws-load-balancer-backend-protocol"
-    value = "http"
-    type  = "string"
-  }
-  set {
     name  = "controller.service.annotations.service\\.beta\\.kubernetes\\.io/aws-load-balancer-connection-idle-timeout"
     value = "60"
     type  = "string"

@@ -48,6 +48,7 @@ module "eks" {
       instance_types               = ["t3.large"]
       capacity_type                = "SPOT"
       subnet_ids                   = module.vpc.private_subnets
+      # In this example, for simplicity, common Admin rights are used. However, we recommend ensuring more granular permissions.
       iam_role_additional_policies = { AdministratorAccess = "arn:aws:iam::aws:policy/AdministratorAccess" }
     }
   }
