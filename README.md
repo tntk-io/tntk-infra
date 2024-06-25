@@ -3,6 +3,8 @@
 
 This educational project is intended for the practical application of knowledge in the field of cloud technology and DevOps, as well as the deployment of web applications with the best practices. The stack is designed to cover the maximum number of technologies and simultaneously carry the functional and meaningful load on each. This project applies a declarative approach to infrastructure building and shows the deployment automation process for the entire stack. All components of the project and their relationships are considered in detail to see how the application and its operation services work in the actual cloud on a concrete example.
 
+Check out the video instructions for the project on https://www.udemy.com/course/real-world-devops-project-gitops-methodology
+
 # Main goal
 
 Gain practical Infrastructure as code (IaC) skills. Learn how to deploy such applications in the cloud cluster.
