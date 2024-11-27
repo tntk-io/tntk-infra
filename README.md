@@ -1,4 +1,8 @@
 <!-- BEGIN_TF_DOCS -->
+# Who we are
+
+We are a DevOps school run by engineers with rich educational and professional credentials who've helped hundreds of students land tech jobs over the past 5 years - https://tntk.io/ 
+
 # Project overview
 
 Put your DevOps skills to the test with our hands-on capstone project. Designed for anyone interested in gaining practical experience, this project challenges you to integrate AWS, Terraform, Kubernetes, GitHub Actions, ArgoCD, Datadog, and PagerDuty to build and manage a production-like environment. Showcase your ability to create a complete, real-world solution by building cloud infrastructure, implementing observability, developing CI/CD pipelines, and managing incidents.
