@@ -1,3 +1,10 @@
+#####################################
+### Attention!!!
+#####################################
+# Datadog integration. Datadog is no longer maintaining the CloudFormation stack for Terraform. 
+# As a workaround, you can set it up manually on the Datadog console.
+# Refer to this doc https://docs.datadoghq.com/getting_started/integrations/aws/
+
 resource "aws_cloudformation_stack" "DatadogIntegration" {
   name = "DatadogIntegration"
   capabilities = ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM", "CAPABILITY_AUTO_EXPAND"]
